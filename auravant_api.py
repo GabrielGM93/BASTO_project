@@ -21,8 +21,7 @@ class Auravant_API(object):
     a header method to reach api through other method '_get_info'. 
     '''
     def __init__(self, token: str):
-         self.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzcmMiOiJ3IiwidWlkIjoiVUlELWZiMWVhMzIyYTIxNjhiNDAwOThjMjEyODIyY2RlYmYzIiwibG9jYWxlIjoiZXNfQVIiLCJkZXYiOjIwNiwiZXhwIjoxNjg5MTYyNjM4LCJ2IjoxNTQ4LCJpYXQiOjE2ODY1NzA2Mzh9.y1hHcEEpUxi_zh6_ybbyfOasTin3XjkfQs6fEo9Bk-4"
-    
+         self.token = token
     def _headers(self):
         head = {
             'Authorization': f'Bearer {self.token}'
